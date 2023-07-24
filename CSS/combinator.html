@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator</title>
+
+    <style>
+        /* p{
+            color:blue;
+        }
+        h1{
+            color:blue;
+        }
+        .container{
+            color:blue;
+        } */
+
+        p,h1,.container{
+            color: aqua;
+        }
+        .parent div{color: red;
+
+        }
+        .parent>div{
+            color: blue;
+        }
+
+        .grandchild1~div{
+            background-color: black;
+        }
+
+        .grandchild1+div{
+            background-color: aqua;
+        }
+
+
+
+    </style>
+
+    
+
+    
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magni beatae nobis, ad dolor sunt minima molestiae! Praesentium optio voluptatum, alias cumque nostrum inventore temporibus minima expedita dignissimos velit asperiores.</p>
+    <h1>heading first</h1>
+    <div class="container">
+        division first
+    </div>
+    <div class="parent"> parent
+        <div class="child1"> child first 
+            <div class="grandchild1">gran child first </div>
+            <div class="grandchild2">gran child second</div>
+            <div class="grandchild3"> gran child third</div>
+            <div class="granchild4">gran child fourth</div>
+        </div>
+        <div class="child2"> child second</div>
+        <div class="child3">child third</div>
+    </div>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid2</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box
+        }
+        .container {
+            display:grid ;
+            grid-template-rows: 10vh 40vh 40vh 10vh;
+            grid-template-columns: 50vw 25vw 25vw;
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: yellow;
+        }
+        .left{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: aqua;
+
+        }
+        .right-top{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: brown;
+        }
+        .right-botton-left{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            background-color: blue;
+        }
+        .right-botton-right{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            background-color: blueviolet;
+        }
+        .footer{
+            grid-column-start:1 ;
+            grid-column-end: 4;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">header</div>
+        <div class="left">left
+            <li>home</li>
+            <li>about</li>
+            <li>login</li>
+            <li>logout</li>
+            <li>krishala</li>
+            <li>chamsuri</li>
+            <li>bio</li>
+            <li>bhaisi</li>
+            <li>sabina</li>
+            <li>sangita</li>
+            <li>contact</li>
+            <li>phone</li>
+            <li>iphone</li>
+            <li>redmi</li>
+            <li>dell</li>
+            <li>intel</li>
+            <li>ring</li>
+            <li>gold</li>
+        </div>
+        <div class="right-top">right top</div>
+        <div class="right-botton-left"> right botton left</div>
+        <div class="right-botton-right"> right botton right</div>
+        <div class="footer">footer</div>
+    </div>
+
+</body>
+
+</html>

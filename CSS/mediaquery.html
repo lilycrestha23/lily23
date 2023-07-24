@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quary</title>
+
+    <style>
+        .container {
+            justify-content: space-evenly;
+            display: flex;
+            width: 100%;
+            background-color: blue;
+            height: 100px;
+
+        }
+
+        .div {
+            height: 100px;
+            width: 200px;
+            background-color: aqua;
+
+        }
+
+        @media screen and (min-width:0px)and(max-width:500px) {
+            #factor4 {
+
+                background-color: aliceblue;
+                height: 100px;
+
+            }
+
+            #factor1 {
+                background-color: black;
+
+            }
+
+            #factor2 {
+                background-color: chartreuse;
+
+            }
+
+            #factor3 {
+                background-color: coral;
+            }
+
+
+        }
+
+        @media screen and (min-width:500px) and (max-width:1000px) {
+            #factor1 {
+                background-color:pink;
+                height: 200px;
+
+
+            }
+
+            #factor2 {
+                background-color: chartreuse;
+                height: 300px;
+
+            }
+
+            #factor3 {
+                background-color: coral;
+                height: 400px;
+            }
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="factor4">
+        <div class="div" id="factor1"><ul>
+            <li>mango</li>
+            <li>apple</li>
+            <li>banana</li>
+        </ul></div>
+        <div class="div" id="factor2"><ul>
+            <li>home</li>
+            <li>log in</li>
+            <li>log out</li>
+       </ul> </div>
+        <div class="div" id="factor3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nisi.</div>
+    </div>
+
+</body>
+
+</html>

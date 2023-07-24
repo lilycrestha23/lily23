@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION AND TRANFORM</title>
+
+    <style>
+        .con{
+            background-color: aqua;
+            height: 200px;
+            width: 100%;
+
+        }
+        .box{
+            background-color: brown;
+            height: 150px;
+            width: 300px;
+            position: relative;
+            animation-name: con;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards;
+            animation-direction: normal;
+            animation-timing-function: ease;
+            border-radius: 20px;
+
+        }
+        @keyframes con {
+            from{
+                /* transform: rotate(180deg); */
+                width: 0;
+
+            }
+            to{
+                /* transform: skew(45deg); */
+                /* transform: translateX(1000px); */
+                top: 400px;
+                width: 100%;
+                height: 500px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box">
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>

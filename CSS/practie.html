@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+
+    <style> *{
+        margin-left: 0;
+    }
+
+    .main{
+        /* border: solid red;
+        width: 800px;
+        height: 500px; */
+        display: grid;
+        grid-template-rows: 25px 100px 100px ;
+        grid-template-columns: 100px auto auto ;
+        grid-row-gap: 5px;
+        grid-column-gap: 10px;
+    }
+
+    .main div{
+        background-color: blue;
+        border: solid pink;
+    }
+    #div1{
+        justify-content: space-evenly;
+        list-style: none;
+        display: flex;
+        height: 30px;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+   
+    
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptates dolores aut nemo temporibus debitis! Vel architecto odit consequuntur incidunt itaque harum doloremque, minima et quasi minus magni culpa ipsum.</p></div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+        <div id="box6">6</div>
+    </div>
+
+
+
+</body>
+
+</html>

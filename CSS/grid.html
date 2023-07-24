@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>grid</title>
+
+    <style>
+        *{
+            margin-left: 0;
+        }
+
+        .main{
+            /* border: solid red;
+            width: 800px;
+            height: 500px; */
+            display: grid;
+            grid-template-rows: 50px 200px 200px 200px 200px;
+            grid-template-columns: 200px auto auto auto;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+        }
+
+        .main div{
+            background-color: blue;
+            border: solid pink;
+        }
+        #div1{
+            justify-content: space-evenly;
+            list-style: none;
+            display: flex;
+            height: 50px;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        #div2{
+            width: 200px;
+            grid-row-start: 2;
+            grid-row-end: 5;
+
+        }
+        #div3{
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+        }
+
+        #div10{
+            justify-content: space-evenly;
+            list-style: none;
+            display: flex;
+            grid-row-start: 5;
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div id="div1">
+            <li>home</li>
+            <li>product</li>
+            <li>about</li>
+            <li>notice</li>
+            <li>contact</li>
+        </div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+        <div id="div5">5</div>
+        <div id="div6">6</div>
+        <div id="div7">7</div>
+        <div id="div8">8</div>
+        <div id="div9">9</div>
+        <div id="div10">
+             <li>home</li>
+            <li>product</li>
+            <li>about</li>
+            <li>notice</li>
+            <li>contact</li>
+        </div>
+    </div>
+
+</body>
+
+</html>
